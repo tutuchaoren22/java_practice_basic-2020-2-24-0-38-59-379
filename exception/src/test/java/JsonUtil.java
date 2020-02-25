@@ -10,12 +10,12 @@ public class JsonUtil {
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     public static String convertToJson(Object object) {
-        //TODO: change the code to pass the test
+        String objJson = "";
         try {
-            return objectMapper.writeValueAsString(object);
+            objJson = objectMapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
-        throw new NotImplementedException();
+        return objJson;
     }
 }
