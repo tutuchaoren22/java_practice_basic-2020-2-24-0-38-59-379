@@ -1,6 +1,5 @@
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class JsonUtil {
 
